@@ -1,47 +1,52 @@
-<h1>ExpNo 5 : Implement Simple Hill Climbing Algorithm</h1> 
-<h3>Name:             </h3>
-<h3>Register Number:             </h3>
-<H3>Aim:</H3>
-<p>Implement Simple Hill Climbing Algorithm and Generate a String by Mutating a Single Character at each iteration </p>
-<h2> Theory: </h2>
-<p>Hill climbing is a variant of Generate and test in which feedback from test procedure is used to help the generator decide which direction to move in search space.
+# ExpNo 5 : Implement Simple Hill Climbing Algorithm 
+## Name: Sai Hrishi M             
+## Register Number:             
+
+## Aim:
+Implement Simple Hill Climbing Algorithm and Generate a String by Mutating a Single Character at each iteration 
+
+## Theory: 
+
+Hill climbing is a variant of Generate and test in which feedback from test procedure is used to help the generator decide which direction to move in search space.
 Feedback is provided in terms of heuristic function
-</p>
+
+## Algorithm:
+
+1.Evaluate the initial state.<br><br>
+2.If it is a goal state then return it and quit. Otherwise, continue with initial state as current state.<br><br>
+3.Loop until a solution is found or there are no new operators left to be applied in current state. <br><br>
+4.Select an operator that has not yet been applied to the current state and apply it to produce a new state.<br><br>
+5.Evaluate the new state:<br><br>
+ i) if it is a goal state, then return it and quit<br>
+ ii) if it is not a goal state but better than current state then make new state as current state<br>
+ iii) it is not better than current state then continue in the loop<br>
+    
+
+## Steps Applied:
+
+### Step-1
+
+Generate Random String of the length equal to the given String
+
+### Step-2
+
+Mutate the randomized string each character at a time
+
+### Step-3
+
+Evaluate the fitness function or Heuristic Function
+
+### Step-4:
+
+Loop Step -2 and Step-3  until we achieve the score to be Zero to achieve Global Minima.
 
 
-<h2>Algorithm:</h2>
-<p>
-<ol>
- <li> Evaluate the initial state.If it is a goal state then return it and quit. Otherwise, continue with initial state as current state.</li> 
-<li>Loop until a solution is found or there are no new operators left to be applied in current state:
-<ul><li>Select an operator that has not yet been applied to the current state and apply it to produce a new state</li>
-<li>Evaluate the new state:
-  <ul>
-<li>if it is a goal state, then return it and quit</li>
-<li>if it is not a goal state but better than current state then make new state as current state</li>
-<li>if it is not better than current state then continue in the loop</li>
-    </ul>
-</li>
-</ul>
-</li>
-</ol>
+## Sample Input and Output
 
-</p>
-<hr>
-<h3> Steps Applied:</h3>
-<h3>Step-1</h3>
-<p> Generate Random String of the length equal to the given String</p>
-<h3>Step-2</h3>
-<p>Mutate the randomized string each character at a time</p>
-<h3>Step-3</h3>
-<p> Evaluate the fitness function or Heuristic Function</p>
-<h3>Step-4:</h3>
-<p> Lopp Step -2 and Step-3  until we achieve the score to be Zero to achieve Global Minima.</p>
+Sample String: Artificial Intelligence
 
-<hr>
-<h2>Sample Input and Output</h2>
-<h2>Sample String:</h2> Artificial Intelligence
-<h2>Output:</h2>
+### Output:
+
 Score: 643  Solution :  8RzF:oG ]%;CPORRMe!zGvk<br>
 Score: 609  Solution :  8RzF:oG ]%;CPqRRMe!zGvk<br>
 Score: 604  Solution :  8RzF:oG ]%;CPqRRMe!zGqk<br>
@@ -59,3 +64,12 @@ Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 0  Solution :  Artificial Intelligence<br>
+
+
+### Output:
+
+<img width="543" height="768" alt="image" src="https://github.com/user-attachments/assets/357b7caa-21dc-4716-8fcb-16a907b8034a" />
+
+### Result:
+
+Thus, we have successfully Implement Simple Hill Climbing Algorithm and Generated a String by Mutating a Single Character at each iteration
